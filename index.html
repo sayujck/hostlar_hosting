@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostlar</title>
     <link rel="icon" href="./images/title.png">
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
         <!-- Navbar -->
@@ -19,35 +25,54 @@
             <div class="flex items-center space-x-4">
                 <a class="logoText text-2xl font-bold" href="#">Hostlar</a>
             </div>
-            <div class="hidden md:flex space-x-4">
-                <a href="#" class="px-2 hover:text-yellow-300">Home</a>
-                <a href="#" class="px-2 hover:text-yellow-300">Pages</a>
-                <a href="#" class="px-2 hover:text-yellow-300">Hosting</a>
-                <a href="#" class="px-2 hover:text-yellow-300">Elements</a>
-                <a href="#" class="px-2 hover:text-yellow-300">Support</a>
-                <a href="#" class="px-2 hover:text-yellow-300">About</a>
-                <button class="bg-blue-600 text-white py-1 px-3 rounded font-semibold">Get Started</button>
+
+            <!-- Menu Button -->
+            <button id="menu-button" class="md:hidden text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <div id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:relative top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none md:top-auto md:left-auto">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0">
+                    <li><a href="#" class="block md:px-4 py-2 hover:text-indigo-900">Home</a></li>
+                    <li><a href="#" class="block md:px-4 py-2 hover:text-indigo-900">Pages</a></li>
+                    <li><a href="#" class="block md:px-4 py-2 hover:text-indigo-900">Hosting</a></li>
+                    <li><a href="#" class="block md:px-4 py-2 hover:text-indigo-900">Elements</a></li>
+                    <li><a href="#" class="block md:px-4 py-2 hover:text-indigo-900">Support</a></li>
+                    <li><a href="#" class="block md:px-4 py-2 hover:text-indigo-900">About</a></li>
+                    <li>
+                        <button
+                            class="bg-black text-white py-1 px-3 rounded font-semibold hover:text-white hover:bg-gray-600">
+                            Get Started
+                        </button>
+                    </li>
+                </ul>
             </div>
+
         </nav>
 
         <!-- Hero Section -->
-        <div class="offer hero-equal-height ptb-100 gradient-overly-top">
+        <div class="offer hero-equal-height gradient-overly-top">
             <div class="container text-white">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="ms-4 pt-10 md:pt-20 pl-4 md:pl-20 leading-10">
+                    <div class="mx-10 mt-10 md:pt-20 md:pl-30 leading-8">
                         <span>Reliable hosting to make any website</span>
                         <h1 class="font-bold text-2xl md:text-3xl">We Offer Shared Hosting Easy To Manage</h1>
                         <ul class="pt-5">
-                            <li class="py-1 leading-4"><i class="fa-regular fa-square-check"></i> <b>Unmetered</b> Sub Domains, Accounts</li>
-                            <li class="py-1 leading-4"><i class="fa-regular fa-square-check"></i> <b>99%</b> Uptime Guarantee</li>
-                            <li class="py-1 leading-4"><i class="fa-regular fa-square-check"></i> <b>45-Day</b> Money-Back Guarantee</li>
+                            <li class="py-1 leading-4"><i class="fa-regular fa-square-check"></i> <b>Unmetered</b> Sub
+                                Domains, Accounts</li>
+                            <li class="py-1 leading-4"><i class="fa-regular fa-square-check"></i> <b>99%</b> Uptime
+                                Guarantee</li>
+                            <li class="py-1 leading-4"><i class="fa-regular fa-square-check"></i> <b>45-Day</b>
+                                Money-Back Guarantee</li>
                         </ul>
                         <div class="mt-3">
                             <p>Get all the essentials features <b>Starting at $2.59/mo</b></p>
                             <a class="border px-2 py-1 rounded" href="">Get Started Now</a>
                         </div>
                     </div>
-                    <div class="pt-10 md:pt-36">
+                    <div class="pt-10 md:pt-30">
                         <div class="text-center">
                             <span class="px-3 py-1 bg-orange-600 rounded-lg leading-10">Shared Hosting</span>
                             <h1><span class="text-5xl md:text-6xl font-bold">$0.99/</span>Mo</h1>
@@ -64,14 +89,16 @@
             <div class="flex justify-center">
                 <div class="container text-center" style="width: 100%; max-width: 600px;">
                     <h1 class="text-center text-2xl font-bold">Managed Our Hosting Price</h1>
-                    <p class="text-center font-normal">Distinctively recaptiualize principle-centered core competencies through client-centered core competencies.</p>
+                    <p class="text-center font-normal">Distinctively recaptiualize principle-centered core competencies
+                        through client-centered core competencies.</p>
                 </div>
             </div>
 
             <div class="flex justify-center">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                     <!-- Plan 1 -->
-                    <div class="m-5 border text-center rounded-lg hover:border-blue-700 border-2" style="width: 100%; max-width: 280px;">
+                    <div class="m-5 border text-center rounded-lg hover:border-blue-700 border-2"
+                        style="width: 100%; max-width: 280px;">
                         <div class="p-5">
                             <h3 class="text-xl font-medium mt-5">Cloud Starter</h3>
                             <p class="mb-5 text-gray-600">Medium traffic personal sites</p>
@@ -91,7 +118,8 @@
                         </div>
                     </div>
                     <!-- Plan 2 -->
-                    <div class="m-5 text-center rounded-lg border-blue-700 border-2" style="width: 100%; max-width: 280px;">
+                    <div class="m-5 text-center rounded-lg border-blue-700 border-2"
+                        style="width: 100%; max-width: 280px;">
                         <div class="p-5">
                             <h3 class="text-xl font-medium mt-5">Cloud Business</h3>
                             <p class="mb-5 text-gray-600">High traffic corporate sites</p>
@@ -111,7 +139,8 @@
                         </div>
                     </div>
                     <!-- Plan 3 -->
-                    <div class="m-5 border text-center rounded-lg hover:border-blue-700 border-2 flex justify-center" style="width: 100%; max-width: 280px;">
+                    <div class="m-5 border text-center rounded-lg hover:border-blue-700 border-2 flex justify-center"
+                        style="width: 100%; max-width: 280px;">
                         <div class="p-3" style="width: 220px;">
                             <h3 class="text-xl font-medium mt-5">Cloud Starter</h3>
                             <p class="mb-5 text-gray-600">Medium personal sites</p>
@@ -139,7 +168,7 @@
             <div class="container mx-auto text-center">
                 <h2 class="text-2xl font-bold mb-4">What Our Clients Say</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-           
+
                     <div class="shadow-lg p-6 bg-white rounded-lg">
                         <p>"Hostlar provides the best hosting service with outstanding customer support."</p>
                         <span class="font-bold">- Sarah Johnson</span>
@@ -149,7 +178,7 @@
                         <p>"I moved my website to Hostlar, and the uptime is fantastic. Highly recommended!"</p>
                         <span class="font-bold">- David Lee</span>
                     </div>
-                    
+
                     <div class="shadow-lg p-6 bg-white rounded-lg">
                         <p>"Affordable and reliable hosting, perfect for my small business!"</p>
                         <span class="font-bold">- Emily Smith</span>
@@ -162,21 +191,23 @@
         <section class="bg-blue-700 text-white py-16">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-                <p class="mb-8">Choose the perfect hosting plan for your website and enjoy our reliable services today.</p>
-                <a href="#" class="bg-yellow-400 text-black py-3 px-6 rounded-full hover:bg-yellow-500">Get Started Now</a>
+                <p class="mb-8">Choose the perfect hosting plan for your website and enjoy our reliable services today.
+                </p>
+                <a href="#" class="bg-yellow-400 text-black py-3 px-6 rounded-full hover:bg-yellow-500">Get Started
+                    Now</a>
             </div>
         </section>
 
         <!-- Footer Section -->
-        <footer class="bg-gray-800 text-white py-10 mt-16">
+        <footer class="bg-gray-800 text-white py-10">
             <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
-                
+
                 <div>
                     <h3 class="font-bold text-xl mb-4">Hostlar</h3>
                     <p>Reliable and affordable web hosting solutions for everyone.</p>
                 </div>
-                
-                
+
+
                 <div>
                     <h3 class="font-bold text-xl mb-4">Quick Links</h3>
                     <ul>
@@ -187,8 +218,8 @@
                         <li><a href="#" class="hover:text-yellow-300">Support</a></li>
                     </ul>
                 </div>
-                
-                
+
+
                 <div>
                     <h3 class="font-bold text-xl mb-4">Hosting Plans</h3>
                     <ul>
@@ -198,8 +229,8 @@
                         <li><a href="#" class="hover:text-yellow-300">Dedicated Hosting</a></li>
                     </ul>
                 </div>
-        
-                
+
+
                 <div>
                     <h3 class="font-bold text-xl mb-4">Contact Us</h3>
                     <p><i class="fa fa-phone"></i> +123 456 789</p>
@@ -213,8 +244,13 @@
                 </div>
             </div>
         </footer>
-        
     </div>
 </body>
+<script>
+    document.getElementById('menu-button').addEventListener('click', function () {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+    });
+</script>
 
 </html>

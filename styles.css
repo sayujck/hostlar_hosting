@@ -1,7 +1,11 @@
+@import "tailwindcss";
+
 .offer {
     background: url(./images/offer_bg.png);
-    height: 500px;
+    height: 600px;
 }
 .main{
     font-family: "Work Sans", system-ui;
 }
+
+
